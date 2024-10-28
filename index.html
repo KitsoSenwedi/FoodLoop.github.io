@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodLoop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">FoodLoop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule Donation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Pick-Up Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="container text-center my-5 py-5">
+    <h1 class="display-4 fw-bold text-primary">Welcome to Food Rescue Network</h1>
+    <p class="lead text-muted">Reducing food waste and increasing food security by connecting donors with those in need.</p>
+  </section>
+
+  <!-- Features Section with Tabs -->
+  <section id="features" class="container my-5">
+    <h2 class="text-center text-success mb-4">Key Features</h2>
+    <ul class="nav nav-pills justify-content-center mb-3" id="featureTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="feature1-tab" data-bs-toggle="tab" data-bs-target="#feature1" type="button" role="tab">Real-Time Donations</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="feature2-tab" data-bs-toggle="tab" data-bs-target="#feature2" type="button" role="tab">Pick-Up Scheduling</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="feature3-tab" data-bs-toggle="tab" data-bs-target="#feature3" type="button" role="tab">Impact Dashboard</button>
+      </li>
+    </ul>
+    <div class="tab-content my-3" id="featureTabsContent">
+      <div class="tab-pane fade show active" id="feature1" role="tabpanel">
+        <p class="text-center">Allows donors to list surplus food in real time, instantly visible to nearby organizations.</p>
+      </div>
+      <div class="tab-pane fade" id="feature2" role="tabpanel">
+        <p class="text-center">Users can schedule pick-up times and locations to coordinate efficient food distribution.</p>
+      </div>
+      <div class="tab-pane fade" id="feature3" role="tabpanel">
+        <p class="text-center">Displays statistics on food donations, waste reduction, and community impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Donation Form -->
+  <section id="schedule" class="container my-5">
+    <h2 class="text-center text-warning mb-4">Schedule a Donation</h2>
+    <form id="donationForm" class="bg-light p-4 rounded shadow-sm">
+      <div class="mb-3">
+        <label for="donorName" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="donorName" required>
+      </div>
+      <div class="mb-3">
+        <label for="foodType" class="form-label">Type of Food</label>
+        <input type="text" class="form-control" id="foodType" required>
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="quantity" required>
+      </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" id="location" required>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Submit Donation</button>
+    </form>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section id="map" class="container my-5">
+    <h2 class="text-center text-danger mb-4">Pick-Up Locations</h2>
+    <div class="map-placeholder shadow rounded d-flex align-items-center justify-content-center">
+      Google Map Placeholder
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="container my-5">
+    <h2 class="text-center text-info mb-4">About Us</h2>
+    <p class="text-center">Food Rescue Network is a non-profit organization focused on reducing food waste by connecting surplus food with those in need. We work closely with donors and local organizations to ensure food security for all.</p>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="container my-5 text-center">
+    <h2 class="text-center text-secondary mb-4">Contact Us</h2>
+    <p>Email: <a href="mailto:contact@foodrescuenetwork.org">contact@foodrescuenetwork.org</a></p>
+    <p>Phone: +27 123 456 7890</p>
+  </section>
+
+  <!-- Bootstrap JavaScript and Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
